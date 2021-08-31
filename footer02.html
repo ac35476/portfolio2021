@@ -7,7 +7,7 @@
 
 			<div class="container">
 
-				<div class="row py-4" id="footer-info" data-scroll>
+				<div class="row py-4" id="footer-info">
 					<!-- col -->
 					<div class="col-md-6 col-12">
 						© Copyright Hsin Yu Lo 2021
@@ -36,9 +36,9 @@
 			const scroll = new LocomotiveScroll({
 			el: document.querySelector("body"),
 			smooth: true,
-			lerp: 0.13,
-			multiplier:0.3,
-			// repeat: true,
+			lerp: 0.1,
+			multiplier:0.4,
+			repeat: true,
 			tablet:{
 				smooth:true,
 				breakpoint:767,
@@ -47,10 +47,12 @@
 			smartphone:{
 				smooth:false,
 				multiplier:false,
-				// lerp: false,
 			},
 
 			});
+
+			
+
 		</script>
 
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
