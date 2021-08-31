@@ -1,0 +1,239 @@
+/* header---------------------------------- */
+
+.menu{
+    background-color: #191b1d;
+    top: 0;
+    position:relative;
+    z-index:999;
+    height:50px;
+}
+
+
+@media only screen and (max-width: 767px) {
+    .menu{
+        height:40px;
+
+        position: fixed;
+        position：-webkit-sticky;
+        right: 0;
+        top: 0;
+        bottom: auto;
+        left: 0;
+    }
+}
+
+
+.header-logo{
+    color:#ffffff;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+@media only screen and (min-width: 767px) {
+    .header-logo{
+        font-size: 30px;
+    }
+}
+
+.header-link{
+    color: #d5d5d5;
+    font-size: 14px;
+    position: absolute;
+	top:50%;
+	left:0px;
+	transform:translatex(-0px) translatey(-50%);
+    transition: .5s all;
+}
+
+.header-link:hover {
+    color: #fff;
+    transition: .5s all;
+}
+.header-link:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 1px;
+    width: 0;
+    transition: width 0s ease, border-bottom .5s ease;
+}
+.header-link:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    height: 1px;
+    width: 0;
+    border-bottom: 1px solid #fff;
+    transition: width .5s ease;
+}
+.header-link:hover:before {
+    width: 100%;
+    border-bottom: 2px solid #fff;
+    transition: width .5s ease;
+}
+.header-link:hover:after {
+    width: 100%;
+    border-bottom: 1px solid rgba(213, 213, 213, 0);
+    transition: all 0s ease;
+}
+
+
+/*  footer
+------------------------------------- */
+footer,footer a {
+    color: #fff;
+    font-size: 13px;
+}
+
+.inner-footer,
+.inner-footer a{
+    color: #222 !important;
+}
+
+
+@media only screen and (max-width: 992px) {
+    footer{
+        background-color: rgba(255, 255, 255, 0.03) !important;
+    }
+}
+
+
+/* 謝謝觀看 */
+.footer-slogan{
+    font-size: 22px;
+    font-weight: 200;
+}
+
+@media only screen and (min-width: 992px) {
+    .footer-slogan span{
+        display: block;
+        line-height: 1.9;
+        letter-spacing: 2px;
+    }
+}
+
+
+/* 連結 */
+.footer-link a,
+.copyright{
+    font-weight: 400;
+    width: fit-content;
+    margin-bottom: 10px;
+    position: relative;
+    transition: .5s all;
+}
+
+.footer-link a:hover {
+    color: #d5d5d5;
+    transition: .5s all;
+}
+.footer-link a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    height: 2px;
+    width: 0;
+    transition: width .5s ease, border-bottom .5s ease;
+}
+.footer-link a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -4px;
+    height: 1px;
+    width: 0;
+    border-bottom: 2px solid #d5d5d5;
+    transition: width .5s ease;
+}
+.footer-link a:hover:before {
+    width: 100%;
+    border-bottom: 2px solid #d5d5d5;
+    transition: width .5s ease;
+}
+.footer-link a:hover:after {
+    width: 100%;
+    border-bottom: 2px solid rgba(213, 213, 213, 0);
+    transition: all 0s ease;
+}
+
+.footer-link{
+    display: none;
+}
+@media only screen and (min-width: 1200px) {
+    .footer-link{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* 聯繫方式 */
+.footer-text,
+.footer-text a{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: .5px;
+    font-weight: 500;
+}
+
+.footer-text span{
+    margin-bottom: 10px;
+    color: #ababab;
+}
+
+#footer-info{
+    opacity: 0;
+    transition:opacity 1s ease;
+}
+
+#footer-info.is-inview{
+    opacity: 1;
+}
+
+
+/* 回到頂端
+========================================== */
+#backtotop{
+    display: inline-block;
+    position: fixed;
+    bottom: 10px;
+    right: 15px;
+}
+
+#backtotop a {
+    text-decoration: none;
+    border: 0 none;
+    display: inline-block;
+    width: 33px;
+    height: 33px;
+    background-color: #2c2c2c;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    color: #fff !important;
+}
+
+@media only screen and (min-width: 767px) {
+    #backtotop{
+        bottom: 18px;
+        right: 50%;
+    }
+}
+
+
+#backtotop a::before {
+    content: "\f106";
+    font-family: "FontAwesome";
+    position: relative;
+    display: block;
+    top: 9%;
+    color: #fff;
+}
+
+

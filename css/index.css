@@ -1,0 +1,170 @@
+/* 作品
+========================================== */
+.work{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  /* 內框 */
+  .work-wrap{
+    width: calc(100%/2);
+  
+    padding: 4% 5px 4% 5px;
+  
+    display: flex;
+    flex-direction: column;
+  
+    cursor: pointer;
+  
+    opacity: 0;
+    transform-origin: center bottom;
+    transform-style: preserve-3d;
+    transform: translateY(100%) rotateX(15px);
+    transition: opacity 0s cubic-bezier(.215,.61,.355,1),transform 0s cubic-bezier(.215,.61,.355,1)
+  }
+  
+  @media only screen and (min-width: 540px) {
+    .work-wrap{
+      width: calc(100%/3);
+    }
+  }
+  @media only screen and (min-width: 767px) {
+    .work-wrap{
+      width: calc(100%/4);
+    }
+  }
+  @media only screen and (min-width: 992px) {
+    .work-wrap{
+      width: calc(100%/5);
+    }
+  }
+  @media only screen and (min-width: 1200px) {
+    .work-wrap{
+      width: calc(100%/7);
+    }
+  }
+  
+  /* 動畫 */
+  html.is-ready .work-wrap {
+    transform: none;
+    opacity: 1;
+    transition-duration: 2s;
+  }
+  
+  html.is-ready .work-wrap:first-child {
+    transition-delay: .1s
+  }
+  
+  html.is-ready .work-wrap:nth-child(2) {
+    transition-delay: .2s
+  }
+  
+  html.is-ready .work-wrap:nth-child(3) {
+    transition-delay: .3s
+  }
+  
+  html.is-ready .work-wrap:nth-child(4) {
+    transition-delay: .4s
+  }
+  
+  html.is-ready .work-wrap:nth-child(5) {
+    transition-delay: .5s
+  }
+  
+  html.is-ready .work-wrap:nth-child(6) {
+    transition-delay: .6s
+  }
+  
+  html.is-ready .work-wrap:nth-child(7) {
+    transition-delay: .7s
+  }
+  
+  html.is-ready .work-wrap:nth-child(8) {
+    transition-delay: .8s
+  }
+  
+  html.is-ready .work-wrap:nth-child(9) {
+    transition-delay: .9s
+  }
+  
+  html.is-ready .work-wrap:nth-child(10) {
+    transition-delay: 1s
+  }
+  
+  html.is-ready .work-wrap:nth-child(11) {
+    transition-delay: 1.1s
+  }
+  
+  html.is-ready .work-wrap:nth-child(12) {
+    transition-delay: 1.2s
+  }
+  
+  html.is-ready .work-wrap:nth-child(13) {
+    transition-delay: 1.3s
+  }
+  
+  html.is-ready .work-wrap:nth-child(14) {
+    transition-delay: 1.4s
+  }
+  
+  
+  
+  
+  /* 照片外框 */
+  .work-pic{
+    width: 100%;
+    overflow: hidden;
+    transition: .4s;
+  }
+  
+  /* 照片 */
+  .work-pic img{
+    display: block;
+    width: 100%;
+  
+    -moz-transform: scale3d(1, 1, 1);
+    -ms-transform: scale3d(1, 1, 1);
+    -webkit-transform: scale3d(1, 1, 1);
+    transform: scale3d(1, 1, 1);
+  
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+  }
+  
+  .work-wrap:hover .work-pic img{
+    filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+    opacity: 0.5;
+    -moz-transform: scale3d(1.07, 1.07, 1);
+    -ms-transform: scale3d(1.07, 1.07, 1);
+    -webkit-transform: scale3d(1.07, 1.07, 1);
+    transform: scale3d(1.07, 1.07, 1);
+  }
+  
+  /* 作品標題 */
+  .work-title{
+    margin-top: 8.5%;
+    letter-spacing: 1px;
+  
+    opacity: 0;
+    transition:opacity .7s ease;
+  }
+  
+  .work-title.is-inview{
+    opacity: 1;
+  }
+  
+  .work-en-title{
+    margin-top: 5px;
+    color:#727272 ;
+    font-size: 14px;
+    line-height: 1.7;
+  
+    transition:opacity 1s ease;
+      opacity: 0;
+  }
+  
+  .work-en-title.is-inview{
+    opacity: 1;
+  }
