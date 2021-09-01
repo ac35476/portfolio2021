@@ -342,7 +342,7 @@ ol.timeline li:before {
 
 
 
-.about-content,
+/* .about-content,
 .inner-text,
 .timeline-wrap,
 .timeline,
@@ -365,7 +365,7 @@ ol.timeline li:before {
 ,p.is-inview
 {
   opacity: 1;
-}
+} */
 
 .timeline li:first-child.is-inview{
   transition-delay: 0.1s;

@@ -142,14 +142,14 @@
 }
 
 
-.more-work{
+/* .more-work{
   opacity: 0;
   transition:opacity .7s ease;
   transition-delay: .5s;
 }
 .more-work.is-inview{
   opacity: 1;
-}
+} */
 
 /*carousel
 ========================================== */
