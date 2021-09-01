@@ -1,9 +1,9 @@
 		<footer class="inner-footer">
 
 			<!-- go to top -->
-			<!-- <div id="backtotop" data-scroll data-scroll-sticky data-scroll-target=".inner-footer">
-				<a href="#main"data-scroll-to>top</a>
-			</div> -->
+			<div id="backtotop">
+				<a href="#">top</a>
+			</div>
 
 			<div class="container">
 
@@ -29,31 +29,33 @@
 
 		<script src="js/parallax.js"></script>
 
-		<!-- locomotive scroll -->
-		<!-- <script src="js/locomotive-scroll-master/main.js"></script>
-		<script src="js/locomotive-scroll-master/locomotive-scroll.js"></script>
-		<script>
-			const scroll = new LocomotiveScroll({
-			el: document.querySelector("html"),
-			smooth: true,
-			lerp: 0.1,
-			multiplier:0.4,
-			repeat: true,
-			tablet:{
-				smooth:true,
-				breakpoint:767,
-			},
-
-			smartphone:{
-				smooth:false,
-				multiplier:false,
-			},
-
-			});
-		</script> -->
-
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
+
+		<!-- 回到頂端 -->
+		<script>
+			var pxShow = 600; // height on which the button will show
+			var scrollSpeed = 500; // how slow / fast you want the button to scroll to top.
+	
+			$(window).scroll(function () {
+				if ($(window).scrollTop() >= pxShow) {
+					$("#backtotop").addClass('visible');
+				} else {
+					$("#backtotop").removeClass('visible');
+				}
+			});
+	
+			$('#backtotop a').on('click', function () {
+				$('html, body').animate({ scrollTop: 0 }, scrollSpeed);
+				return false;
+			});
+		</script>
+
+
+		<!-- owl.carousel -->
+		<link rel="stylesheet" href="js/owl.carousel/owl.carousel.css">
+		<script src="js/owl.carousel/owl.carousel.js"></script>
+		<script src="js/owl.carousel/theme.js"></script>
 	</body>
 </html>

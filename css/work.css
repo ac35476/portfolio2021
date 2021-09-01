@@ -105,16 +105,7 @@
   transition: all .5s ease;
 }
 
-/* 更多作品
-========================================== */
-/* .job-pic{
-  opacity: 0;
-  transition:opacity .7s ease;
-  transition-delay:.5s ;
-}
-.job-pic.is-inview{  
-  opacity: 1;
-} */
+
 /* 更多作品
 ========================================== */
 .min-w100{
@@ -141,15 +132,6 @@
   letter-spacing: 1px;
 }
 
-
-/* .more-work{
-  opacity: 0;
-  transition:opacity .7s ease;
-  transition-delay: .5s;
-}
-.more-work.is-inview{
-  opacity: 1;
-} */
 
 /*carousel
 ========================================== */
@@ -411,17 +393,7 @@
 }
 
 
-
-/* .page-video{
-  opacity: 0;
-  transition:opacity .7s ease;
-  transition-delay:.5s ;
-}
-
-.page-video.is-inview{  
-  opacity: 1;
-} */
-
+/* 影片 */
 .videobox {
   position: relative;
   width: 100%;
