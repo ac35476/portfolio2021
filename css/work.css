@@ -16,12 +16,12 @@
 .job-item{
   background-color: #ececec;
   padding: 3px 10px;
-  opacity: 0;
-  transition:opacity .7s ease;
+  /* opacity: 0;
+  transition:opacity .7s ease; */
 }
-.job-item.is-inview{
+/* .job-item.is-inview{
   opacity: 1;
-}
+} */
 
 /* 作品簡述 */
 .job-text{
@@ -107,14 +107,14 @@
 
 /* 更多作品
 ========================================== */
-.job-pic{
+/* .job-pic{
   opacity: 0;
   transition:opacity .7s ease;
   transition-delay:.5s ;
 }
 .job-pic.is-inview{  
   opacity: 1;
-}
+} */
 /* 更多作品
 ========================================== */
 .min-w100{
@@ -412,7 +412,7 @@
 
 
 
-.page-video{
+/* .page-video{
   opacity: 0;
   transition:opacity .7s ease;
   transition-delay:.5s ;
@@ -420,7 +420,7 @@
 
 .page-video.is-inview{  
   opacity: 1;
-}
+} */
 
 .videobox {
   position: relative;

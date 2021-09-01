@@ -187,14 +187,14 @@ footer,footer a {
     color: #ababab;
 }
 
-#footer-info{
+/* #footer-info{
     opacity: 0;
     transition:opacity 1s ease;
 }
 
 #footer-info.is-inview{
     opacity: 1;
-}
+} */
 
 
 /* 回到頂端
